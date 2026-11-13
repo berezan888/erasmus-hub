@@ -10,7 +10,7 @@ from database import init_db, migrate_from_json, get_db
 from models import User, Application, Document, Comment, Announcement
 
 app = Flask(__name__)
-app.config["SECRET_KEY"] = "change-me-in-production"
+app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY", "dev-fallback-key")
 app.config["UPLOAD_FOLDER"] = os.path.join("static", "uploads")
 app.config["PERMANENT_SESSION_LIFETIME"] = timedelta(hours=24)
 

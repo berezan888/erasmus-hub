@@ -81,7 +81,7 @@ Erasmus+ Hub is a comprehensive system for managing student mobility application
 1. Clone or download the project and navigate to its directory:
 
    ```bash
-   cd erasmus_hub
+   cd erasmus-hub
    ```
 
 2. Create a virtual environment (recommended):
